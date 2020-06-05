@@ -4,6 +4,8 @@
 # https://www.npr.org/2019/07/10/738506646/student-debt-forgiveness-sounds-good-what-might-happen-if-the-government-did-it#:~:text=Americans%20owe%20about%20%241.6%20trillion,on%20a%20federal%20student%20loan.
 # https://www.nursefamilypartnership.org/wp-content/uploads/2017/02/Miller-State-Specific-Fact-Sheet_US_20170405.pdf
 # https://www.cbo.gov/system/files/2018-11/54690-presentation_0.pdf
+# https://frac.org/wp-content/uploads/cnnslp.pdf
+# http://cdn.cnn.com/cnn/2020/images/04/16/shopp.covid.ppd.costs.analysis_.pdf
 
 library(tidyverse)
 library(here)
