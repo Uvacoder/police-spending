@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>How Much Does Your State Spend on Police?</title>
+    <meta name="description" content="Testing">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/me/favicon.ico">
+</head>
+
+<body>
+    <main>
+    <header>
+        <h1>How Much Does Your State Spend on Police?</h1>
+    </header>
+    <section>
+        <h2>And what else could that money buy?</h2>
+        <h3>
+            <select class="dropdown" id="stateSelector" autocomplete="off">
+                <option value="" disabled selected hidden>Select State</option>
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Delaware</option>
+                <option>District of Columbia</option>
+                <option>Florida</option>
+                <option>Georgia</option>
+                <option>Hawaii</option>
+                <option>Idaho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option>Kansas</option>
+                <option>Kentucky</option>
+                <option>Louisiana</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississippi</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New Jersey</option>
+                <option>New Mexico</option>
+                <option>New York</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+                <option>Ohio</option>
+                <option>Oklahoma</option>
+                <option>Oregon</option>
+                <option>Pennsylvania</option>
+                <option>Rhode Island</option>
+                <option>South Carolina</option>
+                <option>South Dakota</option>
+                <option>Tennessee</option>
+                <option>Texas</option>
+                <option>Utah</option>
+                <option>Vermont</option>
+                <option>Virginia</option>
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>
+            </select>
+        </section>
+        <section>
+        <div class='figure-container'>
+            <!-- <div class='figure-container'> -->
+            <h3>
+                <span id="hidden">
+                    In FY 2017, <span style="color:red" id='state'></span> spent <span
+                        style="font-size:1.1em;text-decoration:underline;" id='amount'></span> on their police
+                    forces.
+                    <hr>
+                    With that money, you could:
+                    <span id="optionsList">
+                        <li>Put <span class="number" id="treatment"></span> people through a residential drug abuse
+                            treatment program</li>
+                        <!--costs on average $3100 https://www.bop.gov/resources/pdfs/wsipp_cost-benefit_summary.pdf-->
+                        <li>Provide a year of childcare to <span class="number" id="childcare"></span> infants and
+                            toddlers</li>
+                        <!--costs $800 per month -- $9600 a year https://www.americanprogress.org/issues/early-childhood/reports/2018/11/15/460970/understanding-true-cost-child-care-infants-toddlers/-->
+                        <li>Pay for <span class="number" id="meals"></span> meals for SNAP recipients</li>
+                        <!--costs $1.40 per meal per person https://www.cbpp.org/research/food-assistance/chart-book-snap-helps-struggling-families-put-food-on-the-table-->
+                        <li>Forgive $50,000 in student loan debt to <span class="number" id="debt"></span> Americans
+                        </li>
+                        <!--Warren's plan was to give $50000 in loan debt for 42 million Americans https://www.npr.org/2019/07/10/738506646/student-debt-forgiveness-sounds-good-what-might-happen-if-the-government-did-it#:~:text=Americans%20owe%20about%20%241.6%20trillion,on%20a%20federal%20student%20loan-->
+                        <li>Put <span class="number" id="nfp"></span> women through the Nurse-Family Partnership</a>
+                            program for a year</li>
+                        <!--the average cost to serve a NFP family for a year is $6640 https://www.nursefamilypartnership.org/wp-content/uploads/2017/02/Miller-State-Specific-Fact-Sheet_US_20170405.pdf-->
+                        <li>Serve students <span class="number" id="lunches"></span> free lunches through the
+                            National School Lunch Program</li>
+                        <!--schools are reimbursed by the federal government $3.22 per free lunch served https://frac.org/wp-content/uploads/cnnslp.pdf-->
+                        <li>Purchase full PPE for <span class="number" id="ppe"></span> healthcare workers</li>
+                        <!--$17.15, calculated from the following site: it sums up the table on page 3 (without duplicating masks) http://cdn.cnn.com/cnn/2020/images/04/16/shopp.covid.ppd.costs.analysis_.pdf-->
+                    </span>
+            </h3>
+            <!-- </div> -->
+
+    <script src="script.js" async defer></script>
+    <script src="helpers.js" async defer></script>
+
+    <!-- <div class='figure-container'> -->
+    <div id="chart"></div>
+</span>
+
+    <!-- </div> -->
+    </div>
+</section>
+<footer>hello</footer>
+</main>
+</body>
+
+</html>

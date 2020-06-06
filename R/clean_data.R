@@ -12,7 +12,7 @@ library(here)
 
 # data is from https://www.taxpolicycenter.org/statistics/state-and-local-general-expenditures-capita
 data_raw <-
-  readxl::read_excel(here("data/data_raw.xls"), skip = 7)
+  readxl::read_excel(here("../data/data_raw.xls"), skip = 7)
 
 data_raw <- data_raw[c(1:2, 10, 12)]
 
@@ -45,4 +45,4 @@ data_final <- data_clean %>%
 
 data_final <- data_final[1:51, ]
 
-write.csv(data_final, here('data/data_clean.csv'))
+write.csv(data_final, here('../data/data_clean.csv'), row.names = FALSE)
