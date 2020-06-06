@@ -10,15 +10,6 @@ html {
     }
 }
 
-/* #chart {
-    margin: auto;
-} */
-
-/* 
-.hero {
-    background: #d22b1f;
-} */
-
 .content {
     flex: 1;
     flex-grow: 4;
@@ -40,16 +31,9 @@ html {
 
 html {
     box-sizing: border-box;
-    /* display: flex; */
     margin: auto;
     width: 60%;
 }
-
-/* *,
-*:before,
-*:after {
-    box-sizing: inherit;
-} */
 
 body {
     background-color: black;
@@ -59,12 +43,6 @@ body {
     color: white;
 }
 
-/* h1,
-h2,
-h3 {
-    text-align: center;
-} */
-
 h1 {
     text-align: center;
     font: 400 2em "Inter";
@@ -73,7 +51,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font: 200 1.3em "Inter";
+    font: 200 1.5em "Inter";
     line-height: 1.5em;
 }
 
@@ -94,6 +72,7 @@ a {
     font: 100 1.25em "Inter";
     /* background: url(dropdown.ico) right / 20px no-repeat #fff; */
     text-align-last: center;
+    text-align: center;
     padding-top: 2px;
     padding-bottom: 2px;
     background-color: white;

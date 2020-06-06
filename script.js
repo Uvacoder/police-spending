@@ -52,7 +52,7 @@ d3.csv('data/data_clean.csv').then(function(data) {
 			.attr('width', width + margin.left + margin.right)
 			.attr('height', height + margin.top + margin.bottom);
 
-		console.log(data);
+		// console.log(data);
 
 		yScale.range([ height, 0 ]).domain(
 			data.map(function(d) {

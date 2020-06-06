@@ -4,17 +4,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>How Much Does Your State Spend on Police?</title>
-    <meta name="description" content="Testing">
+    <meta name="description" content="And what else could that money buy?">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <link rel="icon"
         href="https://raw.githubusercontent.com/connorrothschild/connorrothschild.github.io/master/me/favicon.ico">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@CL_Rothschild">
+    <meta name="twitter:creator" content="@CL_Rothschild">
+    <meta name="twitter:title" content="How Much Does Your State Spend on the Police?">
+    <meta name="twitter:description" content="And what else could that money buy?">
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/connorrothschild/state-policing-spending/master/images/thumbnail.jpg">
+
 </head>
 
 <body>
     <header>
-        <h1>How Much Does Your State Spend on Police?</h1>
+        <h1>How Much Does Your State Spend on the Police?</h1>
     </header>
     <section>
         <h2>And what else could that money buy?</h2>
@@ -78,12 +87,13 @@
         <div class="flex-container wrapper">
             <h3>
                 <div id="hidden" class="content">
-                    In FY 2017, <span style="color:red" id='state'></span> spent <span
-                        style="font-size:1.1em;text-decoration:underline;" id='amount'></span> on their police
-                    forces.
+                    <span style="font-size:1.3em">In FY 2017, <span style="color:red" id='state'></span> spent <span
+                            style="font-size:1.1em;text-decoration:underline;" id='amount'></span><br>on their police
+                        forces.
+                    </span>
                     <hr>
-                    With that money, you could:
-                    <span id="optionsList">
+                    <div style="font-size:1.2em;margin-bottom:2.5%;"">With that money, you could:</div>
+                    <span id=" optionsList">
                         <li>Put <span class="number" id="treatment"></span> people through a residential drug abuse
                             treatment program</li>
                         <!--costs on average $3100 https://www.bop.gov/resources/pdfs/wsipp_cost-benefit_summary.pdf-->
@@ -103,7 +113,7 @@
                         <!--schools are reimbursed by the federal government $3.22 per free lunch served https://frac.org/wp-content/uploads/cnnslp.pdf-->
                         <li>Purchase full PPE for <span class="number" id="ppe"></span> healthcare workers</li>
                         <!--$17.15, calculated from the following site: it sums up the table on page 3 (without duplicating masks) http://cdn.cnn.com/cnn/2020/images/04/16/shopp.covid.ppd.costs.analysis_.pdf-->
-                    </span>
+                        </span>
             </h3>
 
             <script src="script.js" async defer></script>
@@ -116,15 +126,17 @@
     </section>
     <div id="footerHidden">
         <hr>
-    <footer>Black Lives Matter. For more information on policing and police violence, visit <a href="https://www.joincampaignzero.org/" target = "_blank">Campaign Zero</a>.
-        <br><br>
-        Data comes from the 
-        <a href = "https://www.taxpolicycenter.org/statistics/state-and-local-general-expenditures-capita" target = "_blank">Tax Policy Center</a> 
-        and represents spending on police during FY 2017. 
-        <br>
-        The code for this project can be found 
-        <a href = "https://github.com/connorrothschild/state-police-spending" target = "_blank">here</a>.
-    </footer>
+        <footer>Black Lives Matter. For more information on policing and police violence, visit <a
+                href="https://www.joincampaignzero.org/" target="_blank">Campaign Zero</a>.
+            <br><br>
+            Data comes from the
+            <a href="https://www.taxpolicycenter.org/statistics/state-and-local-general-expenditures-capita"
+                target="_blank">Tax Policy Center</a>
+            and represents spending on police during FY 2017.
+            <br>
+            The code for this project can be found
+            <a href="https://github.com/connorrothschild/state-police-spending" target="_blank">here</a>.
+        </footer>
     </div>
 </body>
 
