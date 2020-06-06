@@ -1,12 +1,12 @@
 var csv;
 
 // var w = 500,
-var h = 300;
+var h = 350;
 
 var w =
 	d3.select('#chart').property('clientWidth') == 0 ? window.innerWidth : d3.select('#chart').property('clientWidth');
 
-var margin = { top: 10, right: 100, bottom: 0, left: 0 },
+var margin = { top: 10, right: 0, bottom: 0, left: 0 },
 	width = w - margin.left - margin.right,
 	height = h - margin.top - margin.bottom;
 

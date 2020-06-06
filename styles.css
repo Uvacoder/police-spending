@@ -99,6 +99,10 @@ a {
     font-size: .8em;
 }
 
+li {
+    text-align: left;
+}
+
 .number {
     text-decoration: underline;
     color: red;
