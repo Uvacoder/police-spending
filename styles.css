@@ -1,139 +1,168 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://rsms.me/inter/inter.css');
 
 html {
-    font-family: 'Inter', sans-serif;
+	font-family: 'Inter', sans-serif;
 }
 
 @supports (font-variation-settings: normal) {
-    html {
-        font-family: 'Inter var', sans-serif;
-    }
+	html {
+		font-family: 'Inter var', sans-serif;
+	}
 }
 
 .content {
-    flex: 1;
-    flex-grow: 4;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	-webkit-box-flex: 4;
+	-ms-flex-positive: 4;
+	flex-grow: 4;
 }
 
 .sidebar {
-    border: 1px solid #000000;
-    flex: 0 1 300px;
+	border: 1px solid #000000;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 1 300px;
+	flex: 0 1 300px;
 }
 
 .footer {
-    border: 1px solid #000000;
+	border: 1px solid #000000;
 }
 
 .wrapper {
-    margin: auto;
-    max-width: 75rem;
+	margin: auto;
+	max-width: 75rem;
 }
 
 html {
-    box-sizing: border-box;
-    margin: auto;
-    width: 60%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: auto;
+	width: 60%;
 }
 
 body {
-    background-color: black;
-    margin-left: 2%;
-    margin-right: 2%;
-    vertical-align: baseline;
-    color: white;
+	background-color: black;
+	margin-left: 2%;
+	margin-right: 2%;
+	vertical-align: baseline;
+	color: white;
 }
 
 h1 {
-    text-align: center;
-    font: 400 2em "Inter";
-    padding-top: 1%;
+	text-align: center;
+	font: 400 2em "Inter";
+	padding-top: 1%;
 }
 
 h2 {
-    text-align: center;
-    font: 200 1.5em "Inter";
-    line-height: 1.5em;
+	text-align: center;
+	font: 200 1.5em "Inter";
+	line-height: 1.5em;
 }
 
 h3 {
-    text-align: center;
-    font: 300 1em "Inter";
-    line-height: 1.5em;
+	text-align: center;
+	font: 300 1em "Inter";
+	line-height: 1.5em;
 }
 
 a {
-    color: red;
+	color: red;
 }
 
 .dropdown {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    font: 100 1.25em "Inter";
-    /* background: url(dropdown.ico) right / 20px no-repeat #fff; */
-    text-align-last: center;
-    text-align: center;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    background-color: white;
-    color: black;
-    display: inline-block;
-    border-top-style: none;
-    border-left-style: none;
-    border-right-style: none;
-    border-bottom-style: medium;
-    border-bottom-width: 2px;
-    border-bottom-color: white;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font: 100 1.25em "Inter";
+	/* background: url(dropdown.ico) right / 20px no-repeat #fff; */
+	-moz-text-align-last: center;
+	text-align-last: center;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: white;
+	color: black;
+	display: inline-block;
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-bottom-style: medium;
+	border-bottom-width: 2px;
+	border-bottom-color: white;
 }
 
 #hidden {
-    display: none;
+	display: none;
 }
 
 #footerHidden {
-    display: none;
+	display: none;
 }
 
 #optionsList {
-    text-align: left;
-    font-size: .8em;
+	text-align: left;
+	font-size: .8em;
 }
 
 li {
-    text-align: left;
+	text-align: left;
 }
 
 .number {
-    text-decoration: underline;
-    color: red;
+	text-decoration: underline;
+	color: red;
 }
 
 #chart {
-    max-width: 100%;
-    margin-left: 2%
+	max-width: 100%;
+	margin-left: 2%;
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
 }
 
 @media only screen and (max-width: 600px) {
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-    }
+	.flex-container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
 
-    #chart {
-        max-width: 100%;
-        margin: 0;
-    }
+	#chart {
+		max-width: 100%;
+		margin: 0;
+	}
 
-    html {
-        box-sizing: border-box;
-        display: flex;
-        margin: auto;
-        width: 100%;
-    }
+	html {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		margin: auto;
+		width: 100%;
+	}
 }
